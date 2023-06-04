@@ -7,6 +7,7 @@
 	display: flex;
 	background-color: black;
 	align-items: center;
+	height: 46px;
 }
 
 .logo {
@@ -82,7 +83,7 @@
 	height: 100vh;
 }
 
-.über-mich {
+.contacts {
 	display: inline-block;
 	background: white;
 	padding:10px;
@@ -127,6 +128,11 @@
 
 
 @media screen and (max-width: 1000px) {
+
+.search-field {
+	width: 250px;
+}
+
 .nav-btn {
 	display: block;
 	cursor: pointer;
