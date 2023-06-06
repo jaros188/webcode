@@ -15,14 +15,16 @@
 	align-items: center;
 }
 
-.logo a img {
+.logo a img,
+.suche {
 	height: 30px;
 	padding-inline: 10px;
+	cursor: pointer;
 }
 
 .search {
 	background: white;
-	display: inline-flex;
+	display: none;
 	border: 1px solid black;
 	border-radius: 30px;
 	padding:10px;
@@ -36,12 +38,16 @@
 }
 
 .search-field {
-	width: 300px;
+	width: 100px;
 	border: 0;
 }
 
 .search-field:focus + .search-icon {
   /* стили для иконки при фокусе поля */ 
+}
+
+.suche:hover + .search {
+	display: inline-flex;
 }
 
 .search-field:focus {
@@ -77,6 +83,26 @@
 }
 
 #main {
+	background: url('../../sourse/images/berg.jpg');
+	background: linear-gradient(90deg, #299070 0%, #02305F 100%);
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+	display: ;
+}
+
+#main p {
+	background: white;
+	color: black;
+	display: inline-block;
+	width: auto;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid orange;
+	border-radius: 10px;
+}
+
+.über-uns {
 	background: url('../../sourse/images/berg.jpg');
 	background-size: cover;
 	width: 100%;
